@@ -1,0 +1,208 @@
+.creator {
+  &_title {
+    text-align: center;
+    padding-top: 2rem;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 59.002px;
+    font-weight: 600;
+    line-height: 128.5%;
+    letter-spacing: 0.295px;
+  }
+
+  &_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 21px;
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+
+  &_btn {
+    @include btn_main_dark;
+
+    &__second {
+      @include btn_main_dark;
+    }
+  }
+}
+
+.creator_cards {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.cards_item {
+  width: 305px;
+  text-align: center;
+  transition: 0.7s;
+
+
+  padding-bottom: 10px;
+  border-radius: 27.354px;
+  background-color: #22212b;
+  backdrop-filter: blur(14.846222877502441px);
+
+  &__title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 20.055px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 34px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 56.4px;
+      height: 56.4px;
+      position: absolute;
+      left: 118px;
+      top: -34px;
+      display: block;
+      background-repeat: no-repeat;
+      background-image: url("../../img/card_avatar.png");
+    }
+  }
+
+  &__des {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    padding-top: 14px;
+  }
+
+  &__num {
+    background: var(
+      --Linear,
+      linear-gradient(98deg, #ff8d8d -38.38%, #f7fc0e 71.88%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__text {
+    background: linear-gradient(98deg, #ff8d8d -38.38%, #f7fc0e 71.88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__btn {
+    margin-top: 33px;
+    @include btn_second;
+    padding: 14px 110px;
+
+     
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 5px #fff;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+.creator_silder {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 7px;
+  margin-bottom: 216px;
+}
+
+.creator_silder__dark {
+  display: block;
+  width: 27px;
+  height: 13px;
+  background-color: #393940;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.drop__container {
+  text-align: center;
+  height: 390px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: var(--ffffff, rgba(255, 255, 255, 0.1));
+
+  /* Background Blur */
+  backdrop-filter: blur(10px);
+}
+
+.creator_silder__light {
+  width: 47px;
+  height: 13px;
+  display: block;
+  background-color: #89c6ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.drop_title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 40.435px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128.5%;
+  letter-spacing: 0.202px;
+  padding-top: 90px;
+}
+
+.drop_text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13.706px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128.5%;
+  letter-spacing: 0.069px;
+  padding-top: 13px;
+  padding-bottom: 60px;
+}
+
+.drop_input__item {
+  width: 528px;
+  padding: 16px 0 16px 24px;
+  border-radius: 50px;
+  background: var(--ffffff, rgba(255, 255, 255, 0.1));
+  outline: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.drop_input {
+  padding-bottom: 170px;
+}
+
+.drop_input__btn {
+  @include btn_third;
+  margin-left: 20px;
+}
+
+.footer_text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 82px;
+  text-align: center;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,30 @@
+.header {
+  padding-bottom: 4rem;
+
+  &__container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__links {
+    color: $clr-primary;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+    margin-right: 30px;
+
+    &:hover {
+      color: #fff;
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    @include btn_main;
+  }
+}

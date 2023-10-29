@@ -1,0 +1,88 @@
+@mixin btn_main {
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #fff;
+  background: var(
+    --awdawd,
+    linear-gradient(98deg, #89c6ff -38.38%, #3633d0 71.88%)
+  );
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  border: 2px solid #3633d0;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid #3633d0;
+    transition: 0.3s;
+  }
+}
+
+@mixin btn_main_dark {
+  padding: 8px 24px;
+  color: #fff;
+  border: 2px solid #3633d0;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #3633d0;
+    transition: 0.3s;
+  }
+}
+
+@mixin btn_second {
+  padding: 16px 86px;
+  color: #fff;
+  border-radius: 12px;
+  background: var(
+    --awdawd,
+    linear-gradient(98deg, #89c6ff -38.38%, #3633d0 71.88%)
+  );
+  border: 3px solid #3633d0;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: transparent;
+    border: 3px solid #3633d0;
+    transition: 0.3s;
+  }
+}
+
+@mixin btn_third {
+  padding: 16px 32px;
+  border-radius: 30px;
+  color: #fff;
+  background: var(
+    --awdawd,
+    linear-gradient(98deg, #89c6ff -38.38%, #3633d0 71.88%)
+  );
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  border: 2px solid #3633d0;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid #3633d0;
+    transition: 0.3s;
+  }
+}
+
+@mixin btn_third_dark {
+  padding: 16px 32px;
+  color: #fff;
+  border: 2px solid #3633d0;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #3633d0;
+    transition: 0.3s;
+  }
+}
